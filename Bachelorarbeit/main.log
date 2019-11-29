@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2019.9.30)  30 SEP 2019 11:36
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2019.9.30)  30 SEP 2019 14:29
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.116 seconds
+luaotfload | main : initialization completed in 0.129 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 \@input{settings.aux}
 
@@ -2306,10 +2306,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 16.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 16.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 24.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
@@ -2634,7 +2640,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 948E9167B284DFA0B4524FA9F2F13271;2016.
+(rerunfilecheck)             Checksum: FB22CAC09D1C7BC0F94CC2978B63C5E4;2015.
 
 
 LaTeX Warning: There were undefined references.
@@ -2650,25 +2656,25 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 47359 strings out of 494480
+ 47386 strings out of 494480
  100000,1648299 words of node,token memory allocated
  705 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 9 attribute, 93 glue_spec, 9 attrib
 ute_list, 1 write nodes
-   avail lists: 1:8,2:985,3:207,4:190,5:206,6:745,7:508,8:143,9:403,10:6,11:107
- 49619 multiletter control sequences out of 65536+600000
- 52 fonts using 7541975 bytes
+   avail lists: 1:7,2:985,3:207,4:190,5:206,6:745,7:507,8:143,9:403,10:7,11:107
+ 49637 multiletter control sequences out of 65536+600000
+ 52 fonts using 7542615 bytes
  68i,19n,87p,8833b,2892s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips
-/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/tex
-mf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx
+/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/tex
+mf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx
 12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/font
 s/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (19 pages, 374166 bytes).
+Output written on main.pdf (19 pages, 379475 bytes).
 
 PDF statistics: 346 PDF objects out of 1000 (max. 8388607)
  308 compressed objects within 4 object streams

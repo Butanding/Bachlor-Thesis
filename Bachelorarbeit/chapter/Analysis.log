@@ -1,0 +1,175 @@
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2019.9.30)  30 SEP 2019 14:12
+ restricted system commands enabled.
+**Analysis.tex
+(./Analysis.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /home/konstantin/.texlive2017/texmf-var/luatex-cach
+e/generic)(using read cache: /var/lib/texmf/luatex-cache/generic /home/konstanti
+n/.texlive2017/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /home/konstantin/.texlive2017/texmf-
+var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader
+-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /home/konstantin/.texlive2017/texmf-
+var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.106 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \chapter
+          {Analyse}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{A
+            nalyse}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{288}
+luaotfload | db : Font names database loaded from /home/konstantin/.texlive2017/
+texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/konsta
+ntin/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+)(load luc: /home/konstantin/.texlive2017/texmf-var/luatex-cache/generic/fonts/o
+tl/lmroman10-bold.luc)
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.2 Robot Operating System \cite{288}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `288' on page  undefined on input line 2.
+
+\citation{Abadi:2016:TSL:3026877.3026899}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 Tensorflow \cite{Abadi:2016:TSL:3026877.3026899}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Abadi:2016:TSL:3026877.3026899' on page  undefined on i
+nput line 4.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
+[]Analyse
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 1--5
+[[]] 
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 1--5
+[[]] 
+ []
+
+! Undefined control sequence.
+l.6 \section
+          {Entwicklungsumgebung}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \section{E
+            ntwicklungsumgebung}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--14
+[]Entwicklungsumgebung
+ []
+
+! Undefined control sequence.
+l.15 \section
+           {Beispiel Unterkapitel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{B
+             eispiel Unterkapitel}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> Analysis.tex
+             
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 15 strings out of 494480
+ 100000,89155 words of node,token memory allocated 3116 words of node memory still in use:
+   12 hlist, 3 local_par, 1 dir, 71 glue, 7 penalty, 363 glyph, 12 attribute, 35
+ glue_spec, 12 attribute_list, 1 temp nodes
+   avail lists: 1:1,3:1,4:47,5:6,7:44,8:1,10:46
+ 4261 multiletter control sequences out of 65536+600000
+ 16 fonts using 855119 bytes
+ 19i,2n,23p,134b,100s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

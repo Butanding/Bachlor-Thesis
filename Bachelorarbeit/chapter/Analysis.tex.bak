@@ -3,8 +3,8 @@ Robot Operating System \cite{288}
 \newline
 Tensorflow \cite{Abadi:2016:TSL:3026877.3026899}
 
-\section{Beispiel Unterkapitel}
-TODO
+\section{Entwicklungsumgebung}
+Entscheidungsfindungen: 
 
 \begin{compactitem}
 \item Python?
@@ -18,7 +18,9 @@ TODO
 \item scrapy vs. beautifulsoup vs. other?
 \end{compactitem}
 
+Beschreibung der Opensensemap API
 \begin{compactitem}
+\item 
 \end{compactitem}
 \section{Beispiel Unterkapitel}
 TODO
