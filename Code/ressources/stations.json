@@ -1,0 +1,86 @@
+[
+  {
+    "id": 10,
+    "name": "Wedding",
+    "exposure": "Background",
+    "lat": 52.5427778,
+    "lon": 13.349166666666667
+  },
+  {
+    "id": 32,
+    "name": "Grunewald",
+    "exposure": "Suburban",
+    "lat": 52.4730556,
+    "lon": 13.225
+  },
+  {
+    "id": 42,
+    "name": "Neukölln",
+    "exposure": "Background",
+    "lat": 52.4891667,
+    "lon": 13.430833333333332
+  },
+  {
+    "id": 77,
+    "name": "Buch",
+    "exposure": "Suburban",
+    "lat": 52.6441667,
+    "lon": 13.483055555555556
+  },
+  {
+    "id": 85,
+    "name": "Friedrichshagen",
+    "exposure": "Suburban",
+    "lat": 52.4475,
+    "lon": 13.646666666666667
+  },
+  {
+    "id": 88,
+    "name": "Messwagen Leipziger Str.",
+    "exposure": "Traffic",
+    "lat": 52.510043,
+    "lon": 13.388932
+  },
+  {
+    "id": 117,
+    "name": "Schildhornstraße",
+    "exposure": "Traffic",
+    "lat": 52.4636111,
+    "lon": 13.31861111111111
+  },
+  {
+    "id": 124,
+    "name": "Mariendorfer Damm",
+    "exposure": "Traffic",
+    "lat": 52.4380556,
+    "lon": 13.3875
+  },
+  {
+    "id": 143,
+    "name": "Silbersteinstraße",
+    "exposure": "Traffic",
+    "lat": 52.4675,
+    "lon": 13.44138888888889
+  },
+  {
+    "id": 171,
+    "name": "Mitte",
+    "exposure": "Background",
+    "lat": 52.5133333,
+    "lon": 13.41861111111111
+  },
+  {
+    "id": 174,
+    "name": "Frankfurter Allee",
+    "exposure": "Traffic",
+    "lat": 52.5138889,
+    "lon": 13.469722222222222
+  },
+  {
+    "id": 220,
+    "name": "Karl-Marx-Straße",
+    "exposure": "Traffic",
+    "lat": 52.4816667,
+    "lon": 13.43388888888889
+  }
+]
