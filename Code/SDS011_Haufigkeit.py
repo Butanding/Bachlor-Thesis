@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from python3_sensemapi.sensemapi import client
 
 example_to_date = datetime.utcnow()
-example_from_date = example_to_date - timedelta(hours=1)
+example_from_date = example_to_date - timedelta(hours=5)
 
 bbox_berlin = [13.0883, 52.3383, 13.7612, 52.6755]
 bbox_muenster = [7.558594,51.926484,7.702789,51.980228]
@@ -23,6 +23,7 @@ pm25_sensors = dict()
 
 for senseBoxColl in senseMapiresponse:
     for sensor in senseBoxColl.sensors:
+        print(sensor)
         if(sensor.title == "PM10"):
             if sensor.type in pm10_sensors:
                 pm10_sensors[sensor.type] += 1
@@ -39,6 +40,23 @@ for senseBoxColl in senseMapiresponse:
                     all_sensor_types[sensor.title].append(sensor.type)
             else:
                 all_sensor_types[sensor.title] = [sensor.type]
+
+for senseBoxColl in senseMapiresponse:
+    has_temp = False
+    has_humid = False
+    has_pm10 = False
+    for sensor in senseBoxColl.sensors:
+        if (sensor.title == "PM10"):
+            has_pm10 = True
+
+    if has_pm10:
+        for sensor in senseBoxColl.sensors:
+            if "PM10" or "PM2.5" not in sensor.title:
+                if sensor.title in pm10_sensors:
+                    pm10_sensors[sensor.title] += 1
+                else:
+                    pm10_sensors[sensor.title] = 1
+
 
 
 print("Übersicht über alle Sensoren gruppiert nach Phänomen \n {}".format(
