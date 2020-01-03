@@ -10,6 +10,10 @@ def init_stations():
     with open(paths.STATIONS_DB, "r") as json_file:
         data = json.load(json_file)
 
+    #clear station collection
+    Station.station_collection = list()
+
+    #refresh station collection by initializing every station object
     for station_item in data:
         temp = Station(
             id=station_item["id"],

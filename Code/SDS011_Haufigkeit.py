@@ -2,7 +2,7 @@ from blume import client, station, measurements
 from blume.station import Station
 import pandas as pd
 from datetime import datetime, timedelta, timezone
-from python3_sensemapi.sensemapi import client
+from sensemapi import client
 
 example_to_date = datetime.utcnow()
 example_from_date = example_to_date - timedelta(hours=5)

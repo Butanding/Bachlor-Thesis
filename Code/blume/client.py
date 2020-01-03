@@ -79,7 +79,8 @@ def clean_data(df):
     cleand_dates = list()
     for date in df["Date"]:
         cleand_dates.append(
-            pd.to_datetime(date, format='%d.%m.%Y %H:%M', errors='ignore').isoformat())
+            pd.to_datetime(date, format='%d.%m.%Y %H:%M',
+                           errors='ignore').isoformat())
     df["Date"] = cleand_dates
 
     #convert all values to numeric
