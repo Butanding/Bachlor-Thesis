@@ -204,12 +204,12 @@ def convert_seconds_to_minutes(phenomenon, verbose=logging.CRITICAL):
 
         logging.info("New Monthfile loaded = {}".format(month))
         logging.info("Resampling down to Minutes and Hours...")
-        current_hourly_df = curr_month_df.resample('60T').mean()
+        current_hourly_df = curr_month_df.resample('60T', label="right").mean()
         current_mins_df = curr_month_df.resample('1T').mean()
 
         logging.info("Concatenating new and old Data...")
-        hourly_df = pd.concat([hourly_df, current_hourly_df])
-        minute_df = pd.concat([minute_df, current_mins_df])
+        hourly_df = pd.concat([hourly_df, current_hourly_df], sort=True)
+        minute_df = pd.concat([minute_df, current_mins_df], sort=True)
 
     logging.info("------ NEW HOURLY DF INFO -------")
     log_matrix_info(hourly_df, verbose)
@@ -225,20 +225,20 @@ def write_to_csv(phenomenon, interval, data):
 
 
 def start_by_phenomenon(phenomenon):
-    days_scope = 20
+    days_scope = 59
     stepsize = 1
     #Careful: The To-Date is always the end and useally will be ignored
-    example_to_date = datetime(2020, 1, 1, 0, 0, 0).replace(tzinfo=cet)
+    example_to_date = datetime.utcnow().replace(tzinfo=cet).date()
     bbox_berlin = [13.0883, 52.3383, 13.7612, 52.6755]
 
     #Download Data
     try:
         downloaded_data = download_data(phenomenon, days_scope, example_to_date, stepsize, bbox_berlin, verbose=logging.INFO)
     except json.decoder.JSONDecodeError:
-        start_by_phenomenon("PM10")
+        start_by_phenomenon(phenomenon)
 
     #Write Data to CSV by Month by Iterating Batches
-    batch_size = 3
+    batch_size = 5
     for i in range(0, len(downloaded_data), batch_size):
         write_csv_by_month(phenomenon, downloaded_data[i:i+batch_size], verbose=logging.INFO)
 
