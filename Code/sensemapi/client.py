@@ -775,10 +775,11 @@ class SenseMapClient(ReprObject):
             "Sending GET request with parameters:\n{}".format(pretty_json(d))
         )
 
+
         response = self.request(
             "get", urljoin(self.api, paths.BOXES, paths.DATA), params=d,
         )
-
+        
         response_json = response.json()
         response_json.sort(key=lambda x: x["sensorId"])
         sensor_data_collection = []

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from sensemapi import client
 
 example_to_date = datetime.utcnow()
-example_from_date = example_to_date - timedelta(hours=5)
+example_from_date = example_to_date - timedelta(days=1)
 
 bbox_berlin = [13.0883, 52.3383, 13.7612, 52.6755]
 bbox_muenster = [7.558594,51.926484,7.702789,51.980228]
@@ -56,6 +56,7 @@ for senseBoxColl in senseMapiresponse:
                     pm10_sensors[sensor.title] += 1
                 else:
                     pm10_sensors[sensor.title] = 1
+
 
 
 
