@@ -238,7 +238,7 @@ def start_by_phenomenon(phenomenon):
         start_by_phenomenon(phenomenon)
 
     #Write Data to CSV by Month by Iterating Batches
-    batch_size = 5
+    batch_size = 10
     for i in range(0, len(downloaded_data), batch_size):
         write_csv_by_month(phenomenon, downloaded_data[i:i+batch_size], verbose=logging.INFO)
 
@@ -247,6 +247,5 @@ def start_by_phenomenon(phenomenon):
     write_to_csv(phenomenon, "Minutes", df_minutes)
 
 start_by_phenomenon("PM10")
-
-#start_by_phenomenon("Temperatur")
-#start_by_phenomenon("rel. Luftfeuchte")
+start_by_phenomenon("Temperatur")
+start_by_phenomenon("rel. Luftfeuchte")
