@@ -228,7 +228,7 @@ def start_by_phenomenon(phenomenon):
     days_scope = 59
     stepsize = 1
     #Careful: The To-Date is always the end and useally will be ignored
-    example_to_date = datetime.utcnow().replace(tzinfo=cet).date()
+    example_to_date = datetime(2020,1,28,0,0,0).replace(tzinfo=cet)
     bbox_berlin = [13.0883, 52.3383, 13.7612, 52.6755]
 
     #Download Data
